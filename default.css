@@ -64,8 +64,72 @@ h6 {font-size: 16px;}
     text-align: center;
     align-content: center;
     display: grid;
-    border: 2px dashed lightcoral;
     min-height: 10em;
+}
+
+.intro-wrapper{
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+    border-radius: 5px 5px 0 0;
+
+    -webkit-box-shadow: 13px 13px 19px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 13px 19px 0px rgba(0,0,0,0.75);
+    box-shadow: 13px 13px 19px 0px rgba(0,0,0,0.75);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 30em;
+    grid-template-areas: 
+        'nav-wrapper nav-wrapper'
+        'left-column right-column'
+    ;
+}
+
+.nav-wrapper{
+    grid-area: nav-wrapper;
+    border-bottom: 1px solid var(--borderColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dots-wrapper{
+    display: flex;
+    padding: 10px;
+}
+
+.browser-dot{
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 5px ;
+    
+
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px  rgba(0,0,0,0.75);
+
+}
+
+#dot-1{
+    background-color: #fc6058;
+}
+
+#dot-2{
+    background-color: #fec0fe2f;
+}
+
+#dot-3{
+    background-color: #2aca3e;
+}
+
+.left-column{
+    grid-area: left-column;
+}
+
+.right-column{
+    grid-area: right-column;
 }
 
 @media screen and (max-width: 1200px) {
