@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post Name</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<a href="index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="images/dash.jpg">
+		</div>
+		
+		<h3>Coursera Course Analysis Dashboard</h3>
+
+		<p> Maze Solver
+            This program solves a maze using breadth-first search algorithm and visualizes the path on a console window using the curses library in Python.
+            
+            How to Use
+            Make sure you have Python 3 and the curses library installed.
+            Open a terminal window and navigate to the directory containing the code.
+            Run the command python maze_solver.py to start the program.
+            The program will show the maze and the path it found from the starting point "O" to the ending point "X".
+            Press any key to exit the program.
+            How it Works
+            The program represents the maze as a 2D list of characters, where "#" represents a wall and " " represents a free space. The starting point is denoted by "O" and the ending point by "X".
+            
+            The find_path function uses breadth-first search to find the shortest path from the starting point to the ending point. It starts at the starting point and explores all neighboring cells, marking each cell as visited to avoid revisiting it. If a neighboring cell is the ending point, the function returns the path to that cell. If no path is found, the function returns None.
+            
+            The print_maze function uses the curses library to display the maze and the path found. The function takes a 2D list representing the maze, a curses window object, and an optional path as input. The function iterates through each cell in the maze and displays it on the curses window. If a cell is in the path, it is displayed in red. Otherwise, it is displayed in blue.
+            
+            The main function initializes the curses library and calls find_path and print_maze to find and display the path.
+            
+            The wrapper function from curses is used to handle the initialization and cleanup of the curses library.
+            
+            The find_neighbors function returns a list of neighboring cells for a given cell. It checks the cells above, below, to the left, and to the right of the given cell, and adds them to the list if they are not walls and are within the bounds of the maze.
+            
+            The program uses a queue to keep track of the cells to explore in the breadth-first search algorithm. The visited set is used to keep track of which cells have already been explored to avoid revisiting them.
+            
+            Finally, the program waits for the user to press a key before exiting.
+            
+            Limitations
+            The program assumes that the maze is rectangular and that the starting and ending points are present in the maze. It may not work correctly with irregularly shaped mazes or mazes with multiple starting or ending points.
+            
+            The program also assumes that the maze can be displayed within the console window. If the maze is too large, it may not be possible to display it within the console window.
+            
+            Conclusion
+            The Maze Solver program demonstrates how breadth-first search can be used to solve a maze and how the curses library can be used to visualize the path found. The program can be used as a starting point for more complex maze solving algorithms or for visualizing other types of graph traversal algorithms.
+		</p>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- SQL</li>
+			<li>- Tableau</li>
+			<li>- BigQuery</li>
+		</ul>
+
+
+		<h5>Coursera Course Analysis Dashboard</h5>
+		<div class="img-container">
+			<img src="images/lab-dash.jpg">
+		</div>
+
+		<h6>Sample ID Form</h5>
+		<div class="img-container">
+			<img src="images/sample-form.jpg">
+		</div>
+
+		<h5>Results Input Fields</h5>
+		<div class="img-container">
+			<img src="images/results.jpg">
+		</div>
+
+		<h5>PDF Report (Automaticly Generated)</h5>
+		<div class="img-container">
+			<img src="images/pdf-report.jpg">
+		</div>
+
+		<h5>Customer Dashboard</h5>
+		<div class="img-container">
+			<img src="images/customer-dash.jpg">
+		</div>
+
+	</div>
+
+</body>
+</html>
