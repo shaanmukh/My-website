@@ -70,4 +70,4 @@ link3.addEventListener('click', () => {
 
 		localStorage.setItem('theme', mode)
 	}
-/*
+*/
