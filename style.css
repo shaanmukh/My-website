@@ -343,6 +343,13 @@ footer .column > a:hover{
     text-align: center;
 }
 
+
+element.style {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 @media (width < 900px){
     .nav-links{
         display: none;
